@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900">
+  <defs>
+    <radialGradient id="bgGlow" cx="72%" cy="45%" r="65%">
+      <stop offset="0%" stop-color="#2e2a25"/>
+      <stop offset="50%" stop-color="#141417"/>
+      <stop offset="100%" stop-color="#08080a"/>
+    </radialGradient>
+    <linearGradient id="goldAccent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d4af37" stop-opacity="0.55"/>
+      <stop offset="50%" stop-color="#f3e5ab" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#d4af37" stop-opacity="0.05"/>
+    </linearGradient>
+    <pattern id="sketchLines" width="36" height="36" patternUnits="userSpaceOnUse" patternTransform="rotate(35)">
+      <line x1="0" y1="0" x2="0" y2="36" stroke="#ffffff" stroke-opacity="0.03" stroke-width="1"/>
+      <line x1="12" y1="0" x2="12" y2="36" stroke="#d4af37" stroke-opacity="0.03" stroke-width="0.8"/>
+    </pattern>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bgGlow)"/>
+  <rect width="1600" height="900" fill="url(#sketchLines)"/>
+  <g opacity="0.6" transform="translate(820, 75)">
+    <rect x="60" y="30" width="560" height="690" fill="none" stroke="#d4af37" stroke-opacity="0.22" stroke-width="1.5"/>
+    <rect x="75" y="45" width="530" height="660" fill="none" stroke="#ffffff" stroke-opacity="0.06" stroke-width="1"/>
+    <line x1="340" y1="0" x2="340" y2="750" stroke="#ffffff" stroke-opacity="0.09" stroke-dasharray="6,6"/>
+    <line x1="30" y1="340" x2="650" y2="340" stroke="#ffffff" stroke-opacity="0.09" stroke-dasharray="6,6"/>
+    <!-- Golden Ratio / Portrait Proportions -->
+    <circle cx="340" cy="330" r="190" fill="none" stroke="#d4af37" stroke-opacity="0.1" stroke-dasharray="4,8"/>
+    <path d="M 340 130 C 445 130, 505 215, 495 330 C 488 425, 430 510, 340 535 C 250 510, 192 425, 185 330 C 175 215, 235 130, 340 130 Z" 
+          fill="none" stroke="#e5e5e5" stroke-opacity="0.26" stroke-width="2"/>
+    <path d="M 345 142 C 438 145, 492 225, 482 332 C 474 418, 420 498, 342 522" 
+          fill="none" stroke="url(#goldAccent)" stroke-width="3.5"/>
+    <path d="M 210 250 Q 340 220 470 255" fill="none" stroke="#ffffff" stroke-opacity="0.14" stroke-width="1.5"/>
+    <path d="M 235 315 Q 285 305 315 320" fill="none" stroke="#ffffff" stroke-opacity="0.28" stroke-width="2.2"/>
+    <path d="M 365 320 Q 395 305 445 315" fill="none" stroke="#ffffff" stroke-opacity="0.28" stroke-width="2.2"/>
+    <path d="M 340 325 L 332 405 L 352 412" fill="none" stroke="#ffffff" stroke-opacity="0.22" stroke-width="1.8"/>
+    <path d="M 295 455 Q 340 472 385 455" fill="none" stroke="#d4af37" stroke-opacity="0.35" stroke-width="2.2"/>
+    <path d="M 140 660 C 180 560, 255 535, 340 535 C 425 535, 500 560, 540 660" 
+          fill="none" stroke="#e5e5e5" stroke-opacity="0.2" stroke-width="2.5"/>
+    <path d="M 110 690 C 170 580, 510 580, 570 690" 
+          fill="none" stroke="#d4af37" stroke-opacity="0.16" stroke-width="1.5"/>
+  </g>
+  <!-- Graphite Pencil Accent -->
+  <g transform="translate(1380, 620) rotate(-38)" opacity="0.45">
+    <rect x="0" y="0" width="16" height="240" fill="#2c2c2c" stroke="#d4af37" stroke-width="1.2"/>
+    <polygon points="0,0 16,0 8,-36" fill="#d8c3a5"/>
+    <polygon points="5,-24 11,-24 8,-36" fill="#111111"/>
+  </g>
+</svg>

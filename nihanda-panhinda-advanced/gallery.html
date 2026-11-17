@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="si">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Sinhala:wght@400;500;600;700&family=Playfair+Display:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Gallery | නිහඬ පන්හිඳ - Art Gallery</title>
+</head>
+<body>
+
+  <div class="scroll-progress" id="scrollProgress"></div>
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="brand">
+        <div class="brand-icon">
+          <i class="fa-solid fa-pen-nib"></i>
+        </div>
+        <div class="brand-text">
+          <h1>නිහඬ පන්හිඳ 🤍✨</h1>
+          <span>Anuhas Arts</span>
+        </div>
+      </a>
+
+      <button class="mobile-menu-btn" id="menuBtn" aria-label="Menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="">Home</a></li>
+        <li><a href="gallery.html" class="active">Gallery</a></li>
+        <li><a href="about.html" class="">About us</a></li>
+        <li><a href="contacts.html" class="">Contacts &amp; Pricing</a></li>
+        <li><a href="contacts.html#pricing" class="nav-cta">Price/ Orders</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <div class="page-banner">
+      <div class="container reveal active">
+        <span class="section-tag">Portfolio Showcase</span>
+        <h1>කලා නිර්මාණ (Gallery)</h1>
+        <p>අඳුරු පසුබිම මත චිත්‍රවල සියුම් රේඛා, ආලෝකය සහ අඳුරු සෙවනැලි වඩාත් සජීවීව දිස්වේ. ඕනෑම නිර්මාණයක් මත click කර විස්තර බලන්න.</p>
+      </div>
+    </div>
+
+    <section>
+      <div class="container">
+        <div class="gallery-filters reveal">
+          <button class="filter-btn active" data-filter="all">සියල්ල (All)</button>
+          <button class="filter-btn" data-filter="single">Single Portraits</button>
+          <button class="filter-btn" data-filter="couple">Couple &amp; Family</button>
+          <button class="filter-btn" data-filter="framed">Framed Editions</button>
+        </div>
+
+        <div class="gallery-grid" id="galleryGrid">
+          <!-- 01 -->
+          <div class="gallery-card reveal delay-1" data-category="single" data-img="assets/art1.jpg" data-title="Realistic Single Portrait (A4)" data-desc="Staedtler Mars Lumograph pencils (2H - 8B) on 220gsm acid-free art paper. Completed in 4 days.">
+            <div class="gallery-thumb">
+              <span class="size-pill">A4 Size</span>
+              <img src="assets/art1.jpg" alt="Realistic Single Portrait">
+              <span class="zoom-hint"><i class="fa-solid fa-expand"></i> සම්පූර්ණ චිත්‍රය බලන්න</span>
+            </div>
+            <div class="gallery-info">
+              <h3>Realistic Single Portrait</h3>
+              <p>Staedtler Mars Lumograph pencils on 220gsm Fabriano art paper.</p>
+            </div>
+          </div>
+
+          <!-- 02 -->
+          <div class="gallery-card reveal delay-2" data-category="couple" data-img="assets/art2.jpg" data-title="Realistic Single Sketch (A4)" data-desc="Detailed shading with protective fixative spray coating.">
+            <div class="gallery-thumb">
+              <span class="size-pill">A4 Size</span>
+              <img src="assets/art2.jpg" alt="Realistic Single Sketch">
+              <span class="zoom-hint"><i class="fa-solid fa-expand"></i> සම්පූර්ණ චිත්‍රය බලන්න</span>
+            </div>
+            <div class="gallery-info">
+              <h3>Realistic Single Sketch</h3>
+              <p>Detailed shading with protective fixative spray coating.</p>
+            </div>
+          </div>
+
+          <!-- 03 -->
+          <div class="gallery-card reveal delay-3" data-category="framed" data-img="assets/art3.jpg" data-title="Birthday Gift Edition (A4 Size)" data-desc="Custom signature name portrait with protective glass, ready for island-wide courier delivery.">
+            <div class="gallery-thumb">
+              <span class="size-pill">A4 Size</span>
+              <img src="assets/art3.jpg" alt="Birthday Gift Edition">
+              <span class="zoom-hint"><i class="fa-solid fa-expand"></i> සම්පූර්ණ චිත්‍රය බලන්න</span>
+            </div>
+            <div class="gallery-info">
+              <h3>Birthday Gift Edition</h3>
+              <p>Staedtler Mars Lumograph pencils on 220gsm Fabriano art paper ready for island-wide courier delivery.</p>
+            </div>
+          </div>
+
+          <!-- 04 -->
+          <div class="gallery-card reveal delay-1" data-category="single" data-img="assets/art4.jpg" data-title="Hyper-Detailed Close-up (A4 Size)" data-desc="Fine skin texture and eye reflection blending using graphite grades.">
+            <div class="gallery-thumb">
+              <span class="size-pill">A4 Size</span>
+              <img src="assets/art4.jpg" alt="Hyper-Detailed Close-up">
+              <span class="zoom-hint"><i class="fa-solid fa-expand"></i> සම්පූර්ණ චිත්‍රය බලන්න</span>
+            </div>
+            <div class="gallery-info">
+              <h3>Hyper-Detailed Close-up</h3>
+              <p>Fine texture blending using graphite grades (2H to 8B).</p>
+            </div>
+          </div>
+
+          <!-- 05 -->
+          <div class="gallery-card reveal delay-2" data-category="couple" data-img="assets/art5.jpg" data-title="Hyper-Detailed Close-up (A4 Size)" data-desc="Fine skin texture and eye reflection blending using graphite grades.">
+            <div class="gallery-thumb">
+              <span class="size-pill">A4 Size</span>
+              <img src="assets/art5.jpg" alt="Single Portrait (Landscape)">
+              <span class="zoom-hint"><i class="fa-solid fa-expand"></i> සම්පූර්ණ චිත්‍රය බලන්න</span>
+            </div>
+            <div class="gallery-info">
+              <h3>Single Portrait (Landscape)</h3>
+              <p>Staedtler Mars Lumograph pencils on 220gsm Fabriano art paper.</p>
+            </div>
+          </div>
+
+          <!-- 06 -->
+          <div class="gallery-card reveal delay-3" data-category="framed" data-img="assets/art6.jpg" data-title="Graduation Keepsake (A3 Framed)" data-desc="Hand-drawn convocation portrait preserved under crystal-clear protective glass with custom gift note.">
+            <div class="gallery-thumb">
+              <span class="size-pill">A3 Framed</span>
+              <img src="assets/art6.jpg" alt="Graduation Keepsake">
+              <span class="zoom-hint"><i class="fa-solid fa-expand"></i> සම්පූර්ණ චිත්‍රය බලන්න</span>
+            </div>
+            <div class="gallery-info">
+              <h3>Graduation Keepsake</h3>
+              <p>Hand-drawn portrait preserved under crystal-clear protective glass.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="reveal" style="text-align: center; margin-top: 3.8rem;">
+          <a href="contacts.html#pricing" class="btn btn-primary">
+            <i class="fa-solid fa-calculator"></i> ඔබේ චිත්‍රයේ මිල ගණනය කරන්න
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Interactive Lightbox Modal -->
+  <div class="lightbox-modal" id="lightboxModal">
+    <div class="lightbox-box" style="max-width: 540px; padding: 1.8rem;">
+      <button class="lightbox-close" id="lightboxClose" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+      <img id="lbImage" src="" alt="Artwork Preview" style="width: 100%; max-height: 400px; object-fit: contain; border-radius: 12px; margin-bottom: 1rem; background: #0e0e12; display: none;">
+      <h3 id="lbTitle" style="font-family: 'Playfair Display', 'Noto Sans Sinhala', serif; font-size: 1.45rem; color: var(--accent-gold); margin-bottom: 0.5rem;">Artwork Title</h3>
+      <p id="lbDesc" style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 1.4rem;">Artwork details appear here.</p>
+      <a href="contacts.html#pricing" class="btn btn-primary">
+        <i class="fa-brands fa-whatsapp"></i> මෙවැනි චිත්‍රයක් ඇණවුම් කරන්න
+      </a>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="footer-brand">නිහඬ පන්හිඳ 🤍✨🧿</div>
+      <p class="footer-text">
+        Handcrafted Graphite Pencil Portraits • Bringing emotions to paper with every stroke.
+      </p>
+      <div class="footer-nav">
+        <a href="index.html">Main</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="about.html">About</a>
+        <a href="contacts.html">Contacts &amp; Live Pricing</a>
+      </div>
+      <div class="social-links">
+        <a href="https://www.facebook.com/s.srianuhas.26" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/s.srianuhasofficial" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.tiktok.com/@s.srianuhasofficial" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+        <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+      <p class="copyright">&copy; 2026 Nihanda Panhinda Anuhas Arts. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
